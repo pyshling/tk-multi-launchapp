@@ -50,7 +50,7 @@ def bootstrap_tank():
     # if a file was specified, load it now
     file_to_open =  os.environ.get("TANK_FILE_TO_OPEN")
     if file_to_open:
-        FBApplication.FileOpen(file_to_open)
+        FBApplication().FileOpen(file_to_open)
 
     # clean up temp env vars
     for var in ["TANK_ENGINE", "TANK_CONTEXT", "TANK_FILE_TO_OPEN"]:
